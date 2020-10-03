@@ -36,7 +36,7 @@ export default function Sidebar({ id }) {
             <Contacts />
           </Tab.Pane>          
         </Tab.Content>
-        <div className="p-2 border-top border-rigth small">
+        <div className="p-2 border-top border-right small">
           Your ID: <span className="text-muted">{id}</span>
         </div>
         <Button onClick={() => setModalOpen(true)} 
