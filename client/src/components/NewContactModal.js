@@ -11,7 +11,7 @@ export default function NewContactModal({ closeModal }) {
     e.preventDefault()
 
     createContact(idRef.current.value, nameRef.current.value)
-    closeModal();
+    closeModal()
   }
 
   return (
@@ -20,7 +20,7 @@ export default function NewContactModal({ closeModal }) {
       <Modal.Body>
         <Form onSubmit={handleSubmit}>
           <Form.Group>
-            <Form.Label>ID</Form.Label>
+            <Form.Label>Id</Form.Label>
             <Form.Control type="text" ref={idRef} required />
           </Form.Group>
           <Form.Group>
